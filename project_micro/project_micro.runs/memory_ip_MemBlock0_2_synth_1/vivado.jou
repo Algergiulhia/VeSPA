@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Jan 12 23:20:44 2024
+# Process ID: 20050
+# Current directory: /home/tiago/Documents/Vespa/project_micro/project_micro.runs/memory_ip_MemBlock0_2_synth_1
+# Command line: vivado -log memory_ip_MemBlock0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source memory_ip_MemBlock0_2.tcl
+# Log file: /home/tiago/Documents/Vespa/project_micro/project_micro.runs/memory_ip_MemBlock0_2_synth_1/memory_ip_MemBlock0_2.vds
+# Journal file: /home/tiago/Documents/Vespa/project_micro/project_micro.runs/memory_ip_MemBlock0_2_synth_1/vivado.jou
+# Running On: tiago, OS: Linux, CPU Frequency: 3599.948 MHz, CPU Physical cores: 6, Host memory: 16403 MB
+#-----------------------------------------------------------
+source memory_ip_MemBlock0_2.tcl -notrace

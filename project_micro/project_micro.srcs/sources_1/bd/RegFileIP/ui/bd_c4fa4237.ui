@@ -1,0 +1,105 @@
+{
+   "ActiveEmotionalView":"Reduced Jogs",
+   "Addressing View_Layers":"/dataIn0_1:false|/dataIn1_1:false|/dataIn2_1:false|/Net:false|",
+   "Addressing View_ScaleFactor":"0.8",
+   "Addressing View_TopLeft":"-531,-30",
+   "Color Coded_Layers":"/dataIn0_1:true|/dataIn1_1:true|/dataIn2_1:true|/Net:true|",
+   "Color Coded_ScaleFactor":"0.951294",
+   "Color Coded_TopLeft":"-419,2",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-415,-301",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeData":"true",
+   "Display-PortTypeOthers":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_Layers":"/dataIn0_1:true|/dataIn1_1:true|/dataIn2_1:true|/Net:true|",
+   "Grouping and No Loops_ScaleFactor":"1.0",
+   "Grouping and No Loops_TopLeft":"-416,-12",
+   "Interfaces View_Layers":"/dataIn0_1:false|/dataIn1_1:false|/dataIn2_1:false|/Net:false|",
+   "Interfaces View_ScaleFactor":"1.0",
+   "Interfaces View_TopLeft":"-426,-192",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-416,-12",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port1 -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port PortWrite0 -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port2 -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port PortWrite1 -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_RegWriteEn -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_RegEn2 -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace port port-id_RegEn1 -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace portBus address1 -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace portBus addressWrite -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace portBus address2 -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace portBus dataIn1 -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace portBus dataWrite -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace portBus dataIn2 -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace portBus dataOut1 -pg 1 -lvl 2 -x 440 -y 20 -defaultsOSRD
+preplace portBus dataOut2 -pg 1 -lvl 2 -x 440 -y 340 -defaultsOSRD
+preplace inst regBlock0 -pg 1 -lvl 1 -x 310 -y 60 -defaultsOSRD -pinY BRAM_PORTA 20L -pinY BRAM_PORTA.addra 40L -pinY BRAM_PORTA.clka 60L -pinY BRAM_PORTA.dina 80L -pinY BRAM_PORTA.douta 100L -pinY BRAM_PORTA.wea 120L -pinY BRAM_PORTB 140L -pinY BRAM_PORTB.addrb 160L -pinY BRAM_PORTB.clkb 180L -pinY BRAM_PORTB.dinb 200L -pinY BRAM_PORTB.doutb 220L -pinY BRAM_PORTB.web 240L
+preplace inst regBlock1 -pg 1 -lvl 1 -x 310 -y 400 -defaultsOSRD -pinY BRAM_PORTA 20L -pinY BRAM_PORTA.addra 40L -pinY BRAM_PORTA.clka 60L -pinY BRAM_PORTA.dina 80L -pinY BRAM_PORTA.douta 100L -pinY BRAM_PORTA.wea 120L -pinY BRAM_PORTB 140L -pinY BRAM_PORTB.addrb 160L -pinY BRAM_PORTB.clkb 180L -pinY BRAM_PORTB.dinb 200L -pinY BRAM_PORTB.web 220L
+preplace netloc Net 1 0 1 120 120n
+preplace netloc RegEn0_1 1 0 1 NJ 180
+preplace netloc RegEn1_1 1 0 1 40 280n
+preplace netloc RegEn2_1 1 0 1 60J 500n
+preplace netloc address0_1 1 0 1 NJ 100
+preplace netloc address1_1 1 0 1 160 220n
+preplace netloc address2_1 1 0 1 140J 420n
+preplace netloc dataIn0_1 1 0 1 NJ 140
+preplace netloc dataIn1_1 1 0 1 80 260n
+preplace netloc dataIn2_1 1 0 1 100J 460n
+preplace netloc regBlock0_douta 1 0 2 200 20 NJ
+preplace netloc regBlock1_douta 1 0 2 200 360 420J
+preplace netloc BRAM_PORTA_0_1 1 0 1 NJ 80
+preplace netloc BRAM_PORTA_1_1 1 0 1 180J 400n
+preplace netloc BRAM_PORTB_0_1 1 0 1 NJ 200
+preplace netloc BRAM_PORTB_0_2 1 0 1 20J 520n
+levelinfo -pg 1 0 310 440
+pagesize -pg 1 -db -bbox -sgen -180 0 610 680
+",
+   "Reduced Jogs_ScaleFactor":"0.669858",
+   "Reduced Jogs_TopLeft":"-331,-7",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port0 -pg 1 -lvl 0 -x -10 -y -220 -defaultsOSRD
+preplace port port1 -pg 1 -lvl 0 -x -10 -y -100 -defaultsOSRD
+preplace port port2 -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y -180 -defaultsOSRD
+preplace port port-id_RegEn0 -pg 1 -lvl 0 -x -10 -y -120 -defaultsOSRD
+preplace port port-id_RegEn1 -pg 1 -lvl 0 -x -10 -y 0 -defaultsOSRD
+preplace port port-id_RegEn2 -pg 1 -lvl 0 -x -10 -y 230 -defaultsOSRD
+preplace portBus address0 -pg 1 -lvl 0 -x -10 -y -200 -defaultsOSRD
+preplace portBus address1 -pg 1 -lvl 0 -x -10 -y -80 -defaultsOSRD
+preplace portBus address2 -pg 1 -lvl 0 -x -10 -y 150 -defaultsOSRD
+preplace portBus dataIn0 -pg 1 -lvl 0 -x -10 -y -160 -defaultsOSRD
+preplace portBus dataIn1 -pg 1 -lvl 0 -x -10 -y -40 -defaultsOSRD
+preplace portBus dataIn2 -pg 1 -lvl 0 -x -10 -y 190 -defaultsOSRD
+preplace portBus dataOut0 -pg 1 -lvl 2 -x 290 -y -50 -defaultsOSRD
+preplace portBus dataOut1 -pg 1 -lvl 2 -x 290 -y -30 -defaultsOSRD
+preplace portBus dataOut2 -pg 1 -lvl 2 -x 290 -y -10 -defaultsOSRD
+preplace inst regBlock0 -pg 1 -lvl 1 -x 140 -y -110 -defaultsOSRD
+preplace inst regBlock1 -pg 1 -lvl 1 -x 140 -y 180 -defaultsOSRD
+preplace netloc Net 1 0 1 10 -180n
+preplace netloc address2_1 1 0 1 N 150
+preplace netloc address0_1 1 0 1 N -200
+preplace netloc address1_1 1 0 1 N -80
+preplace netloc dataIn2_1 1 0 1 N 190
+preplace netloc dataIn0_1 1 0 1 N -160
+preplace netloc dataIn1_1 1 0 1 N -40
+preplace netloc regBlock1_douta 1 0 2 30 290 270J
+preplace netloc regBlock0_doutb 1 0 2 20 70 260J
+preplace netloc regBlock0_douta 1 0 2 30 60 250J
+preplace netloc RegEn0_1 1 0 1 N -120
+preplace netloc RegEn1_1 1 0 1 N 0
+preplace netloc RegEn2_1 1 0 1 N 230
+preplace netloc BRAM_PORTA_0_1 1 0 1 NJ -220
+preplace netloc BRAM_PORTB_0_1 1 0 1 NJ -100
+preplace netloc BRAM_PORTA_1_1 1 0 1 N 130
+levelinfo -pg 1 -10 140 290
+pagesize -pg 1 -db -bbox -sgen -170 -280 450 440
+"
+}
+0

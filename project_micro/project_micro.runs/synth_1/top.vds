@@ -1,0 +1,874 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Jan  9 17:01:19 2024
+# Process ID: 10438
+# Current directory: /home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/top.vds
+# Journal file: /home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/vivado.jou
+# Running On: tiago, OS: Linux, CPU Frequency: 3658.949 MHz, CPU Physical cores: 6, Host memory: 16403 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1323.508 ; gain = 0.023 ; free physical = 9115 ; free virtual = 15805
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/tiago/Documents/Vespa/project_micro/project_micro.srcs/utils_1/imports/synth_1/adder32.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/tiago/Documents/Vespa/project_micro/project_micro.srcs/utils_1/imports/synth_1/adder32.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10471
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2056.434 ; gain = 404.684 ; free physical = 8086 ; free virtual = 14808
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'sigSubb', assumed default net type 'wire' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/alu.v:96]
+INFO: [Synth 8-11241] undeclared symbol 'checkCondAux', assumed default net type 'wire' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/checkCond.v:47]
+INFO: [Synth 8-11241] undeclared symbol 'checkCond', assumed default net type 'wire' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/controlunit.v:202]
+INFO: [Synth 8-11241] undeclared symbol 'interruptCtrl', assumed default net type 'wire' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/cpu.v:116]
+INFO: [Synth 8-11241] undeclared symbol 'it2', assumed default net type 'wire' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/cpu.v:119]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'opcode' is not allowed [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/top.v:34]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/cpu.v:25]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/datapathBh.v:24]
+INFO: [Synth 8-6157] synthesizing module 'RegFileHandler' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v:25]
+INFO: [Synth 8-6157] synthesizing module 'RegFileIP' [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/RegFileIP/synth/RegFileIP.v:13]
+INFO: [Synth 8-6157] synthesizing module 'RegFileIP_blk_mem_gen_0_0' [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/RegFileIP_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RegFileIP_blk_mem_gen_0_0' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/RegFileIP_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RegFileIP_blk_mem_gen_0_1' [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/RegFileIP_blk_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RegFileIP_blk_mem_gen_0_1' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/RegFileIP_blk_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RegFileIP' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/RegFileIP/synth/RegFileIP.v:13]
+WARNING: [Synth 8-7071] port 'PortWrite0_dout' of module 'RegFileIP' is unconnected for instance 'regInst' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v:36]
+WARNING: [Synth 8-7071] port 'PortWrite1_dout' of module 'RegFileIP' is unconnected for instance 'regInst' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v:36]
+WARNING: [Synth 8-7071] port 'RegEn1' of module 'RegFileIP' is unconnected for instance 'regInst' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v:36]
+WARNING: [Synth 8-7071] port 'RegEn2' of module 'RegFileIP' is unconnected for instance 'regInst' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v:36]
+WARNING: [Synth 8-7071] port 'dataIn1' of module 'RegFileIP' is unconnected for instance 'regInst' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v:36]
+WARNING: [Synth 8-7071] port 'dataIn2' of module 'RegFileIP' is unconnected for instance 'regInst' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v:36]
+WARNING: [Synth 8-7023] instance 'regInst' of module 'RegFileIP' has 14 connections declared, but only 8 given [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'RegFileHandler' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v:25]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/alu.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/alu.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/datapathBh.v:24]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/controlunit.v:43]
+INFO: [Synth 8-6157] synthesizing module 'checkCondition' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/checkCond.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'checkCondition' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/checkCond.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/controlunit.v:43]
+INFO: [Synth 8-6157] synthesizing module 'interruptController' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/interruptController.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'interruptController' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/interruptController.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/cpu.v:25]
+INFO: [Synth 8-6157] synthesizing module 'memoryWrapper' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/memoryWrapper.v:25]
+INFO: [Synth 8-6157] synthesizing module 'memory_ip' [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/memory_ip/synth/memory_ip.v:13]
+INFO: [Synth 8-6157] synthesizing module 'memory_ip_blk_mem_gen_0_1' [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/memory_ip_blk_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'memory_ip_blk_mem_gen_0_1' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/memory_ip_blk_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'memory_ip_MemBlock0_0' [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/memory_ip_MemBlock0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'memory_ip_MemBlock0_0' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/memory_ip_MemBlock0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'memory_ip_MemBlock0_1' [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/memory_ip_MemBlock0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'memory_ip_MemBlock0_1' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/memory_ip_MemBlock0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'memory_ip_MemBlock0_2' [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/memory_ip_MemBlock0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'memory_ip_MemBlock0_2' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/.Xil/Vivado-10438-tiago/realtime/memory_ip_MemBlock0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'memory_ip' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/memory_ip/synth/memory_ip.v:13]
+WARNING: [Synth 8-689] width (32) of port connection 'dataIn0' does not match port width (8) of module 'memory_ip' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/memoryWrapper.v:97]
+WARNING: [Synth 8-689] width (32) of port connection 'dataIn1' does not match port width (8) of module 'memory_ip' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/memoryWrapper.v:98]
+WARNING: [Synth 8-689] width (32) of port connection 'dataIn2' does not match port width (8) of module 'memory_ip' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/memoryWrapper.v:99]
+WARNING: [Synth 8-689] width (32) of port connection 'dataIn3' does not match port width (8) of module 'memory_ip' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/memoryWrapper.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'memoryWrapper' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/memoryWrapper.v:25]
+INFO: [Synth 8-6157] synthesizing module 'addressBus' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'addressBus' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:25]
+INFO: [Synth 8-6157] synthesizing module 'dataBus' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'dataBus' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:47]
+INFO: [Synth 8-6157] synthesizing module 'dmaController' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/dmaController.v:25]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/dmaController.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'dmaController' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/dmaController.v:25]
+INFO: [Synth 8-6157] synthesizing module 'memoryMap' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'memoryMap' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:72]
+INFO: [Synth 8-6157] synthesizing module 'clockModule' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/top.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'clockModule' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/top.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/top.v:22]
+WARNING: [Synth 8-3848] Net cpuData in module/entity datapath does not have driver. [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/datapathBh.v:51]
+WARNING: [Synth 8-3848] Net interruptCtrl in module/entity cpu does not have driver. [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/cpu.v:116]
+WARNING: [Synth 8-3848] Net it2 in module/entity cpu does not have driver. [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/cpu.v:119]
+WARNING: [Synth 8-7129] Port dmaCtrl[31] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[30] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[29] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[28] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[27] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[26] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[25] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[24] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[23] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[22] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[21] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[20] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[19] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[18] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[17] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[16] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[15] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[14] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[13] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[12] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[11] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[10] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[9] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[8] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WriteDMA in module dataBus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DMAisRead in module dataBus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[31] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[30] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[29] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[28] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[27] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[26] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[25] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[24] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[23] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[22] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[21] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[20] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[19] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[18] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[17] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[16] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[15] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[31] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[30] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[29] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[28] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[27] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[26] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[25] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[24] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[23] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[22] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[21] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[20] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[19] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[18] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[17] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[16] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[15] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[14] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[13] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[12] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[11] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[10] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[9] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[8] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[7] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[6] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[5] in module interruptController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interruptCtrl[4] in module interruptController is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2139.402 ; gain = 487.652 ; free physical = 7978 ; free virtual = 14701
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2151.277 ; gain = 499.527 ; free physical = 7977 ; free virtual = 14700
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2151.277 ; gain = 499.527 ; free physical = 7977 ; free virtual = 14700
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2151.277 ; gain = 0.000 ; free physical = 7977 ; free virtual = 14700
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/memory_ip/ip/memory_ip_blk_mem_gen_0_1/memory_ip_blk_mem_gen_0_1/memory_ip_blk_mem_gen_0_1_in_context.xdc] for cell 'mem/memIP/MemBlock0'
+Finished Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/memory_ip/ip/memory_ip_blk_mem_gen_0_1/memory_ip_blk_mem_gen_0_1/memory_ip_blk_mem_gen_0_1_in_context.xdc] for cell 'mem/memIP/MemBlock0'
+Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/memory_ip/ip/memory_ip_MemBlock0_0/memory_ip_MemBlock0_0/memory_ip_MemBlock0_0_in_context.xdc] for cell 'mem/memIP/MemBlock1'
+Finished Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/memory_ip/ip/memory_ip_MemBlock0_0/memory_ip_MemBlock0_0/memory_ip_MemBlock0_0_in_context.xdc] for cell 'mem/memIP/MemBlock1'
+Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/memory_ip/ip/memory_ip_MemBlock0_1/memory_ip_MemBlock0_1/memory_ip_MemBlock0_1_in_context.xdc] for cell 'mem/memIP/MemBlock2'
+Finished Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/memory_ip/ip/memory_ip_MemBlock0_1/memory_ip_MemBlock0_1/memory_ip_MemBlock0_1_in_context.xdc] for cell 'mem/memIP/MemBlock2'
+Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/memory_ip/ip/memory_ip_MemBlock0_2/memory_ip_MemBlock0_2/memory_ip_MemBlock0_2_in_context.xdc] for cell 'mem/memIP/MemBlock3'
+Finished Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/memory_ip/ip/memory_ip_MemBlock0_2/memory_ip_MemBlock0_2/memory_ip_MemBlock0_2_in_context.xdc] for cell 'mem/memIP/MemBlock3'
+Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/RegFileIP/ip/RegFileIP_blk_mem_gen_0_0/RegFileIP_blk_mem_gen_0_0/RegFileIP_blk_mem_gen_0_0_in_context.xdc] for cell 'cpuInst/dp/RF/regInst/regBlock0'
+Finished Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/RegFileIP/ip/RegFileIP_blk_mem_gen_0_0/RegFileIP_blk_mem_gen_0_0/RegFileIP_blk_mem_gen_0_0_in_context.xdc] for cell 'cpuInst/dp/RF/regInst/regBlock0'
+Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/RegFileIP/ip/RegFileIP_blk_mem_gen_0_1/RegFileIP_blk_mem_gen_0_1/RegFileIP_blk_mem_gen_0_0_in_context.xdc] for cell 'cpuInst/dp/RF/regInst/regBlock1'
+Finished Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.gen/sources_1/bd/RegFileIP/ip/RegFileIP_blk_mem_gen_0_1/RegFileIP_blk_mem_gen_0_1/RegFileIP_blk_mem_gen_0_0_in_context.xdc] for cell 'cpuInst/dp/RF/regInst/regBlock1'
+Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2309.027 ; gain = 0.000 ; free physical = 7955 ; free virtual = 14692
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2309.062 ; gain = 0.000 ; free physical = 7954 ; free virtual = 14691
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7950 ; free virtual = 14688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7950 ; free virtual = 14688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for mem/memIP. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mem/memIP/MemBlock0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mem/memIP/MemBlock1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mem/memIP/MemBlock2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mem/memIP/MemBlock3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for cpuInst/dp/RF/regInst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for cpuInst/dp/RF/regInst/regBlock0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for cpuInst/dp/RF/regInst/regBlock1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7950 ; free virtual = 14688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controlunit'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dmaController'
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/alu.v:100]
+WARNING: [Synth 8-327] inferring latch for variable 'N_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/alu.v:102]
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/alu.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/alu.v:103]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 s_start |                         00000001 |                             0000
+                 s_fetch |                         00000100 |                             0001
+                s_fetch2 |                         10000000 |                             0010
+                s_decode |                         01000000 |                             0011
+                  s_exec |                         00100000 |                             0100
+                  s_halt |                         00001000 |                             0110
+                 s_extra |                         00010000 |                             0101
+                   s_int |                         00000010 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'controlunit'
+WARNING: [Synth 8-327] inferring latch for variable 'priority_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/interruptController.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'bit0_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/memoryWrapper.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'bit1_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/memoryWrapper.v:63]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'dmaController'
+WARNING: [Synth 8-327] inferring latch for variable 'dmaData_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/dmaController.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'dmaCtrl_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:114]
+WARNING: [Synth 8-327] inferring latch for variable 'dmaSourceAddr_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:116]
+WARNING: [Synth 8-327] inferring latch for variable 'dmaDestinationAddr_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:118]
+WARNING: [Synth 8-327] inferring latch for variable 'interruptCtrl_reg' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:120]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7949 ; free virtual = 14687
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 1     
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 7     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               27 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 14    
+	   5 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 3     
+	   2 Input   13 Bit        Muxes := 3     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 6     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 3     
+	   4 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 7     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+	   8 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port dmaCtrl[31] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[30] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[29] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[28] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[27] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[26] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[25] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[24] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[23] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[22] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[21] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[20] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[19] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[18] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[17] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[16] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[15] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[14] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[13] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[12] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[11] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[10] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[9] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dmaCtrl[8] in module dmaController is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WriteDMA in module dataBus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DMAisRead in module dataBus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[31] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[30] in module memoryWrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address_32[29] in module memoryWrapper is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \dma/dmaData_reg[28]  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (cpuInst/cu/FSM_onehot_state_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpuInst/cu/FSM_onehot_state_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpuInst/isr/priority_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpuInst/isr/priority_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem/bit0_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem/bit1_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (dma/FSM_onehot_state_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaCtrl_reg[0]) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaCtrl_reg[7]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaCtrl_reg[6]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaCtrl_reg[5]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaCtrl_reg[4]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaCtrl_reg[3]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaCtrl_reg[2]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaCtrl_reg[1]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaCtrl_reg[0]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:105]
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaSourceAddr_reg[0]) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[31]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[30]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[29]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[28]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[27]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[26]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[25]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[24]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[23]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[22]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[21]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[20]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[19]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[18]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[17]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[16]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[15]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[14]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[13]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[12]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[11]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[10]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[9]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[8]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[7]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[6]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[5]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[4]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[1]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaSourceAddr_reg[0]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:104]
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map/dmaDestinationAddr_reg[3]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[31]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[30]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[29]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[28]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[27]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[26]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[25]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[24]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[23]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[22]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[21]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'map/dmaDestinationAddr_reg[20]__0/Q' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/addressBus.v:103]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7913 ; free virtual = 14658
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7903 ; free virtual = 14656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7903 ; free virtual = 14656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7903 ; free virtual = 14656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7902 ; free virtual = 14654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7902 ; free virtual = 14654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7902 ; free virtual = 14654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7902 ; free virtual = 14654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7902 ; free virtual = 14654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7902 ; free virtual = 14654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------+----------+
+|      |BlackBox name             |Instances |
++------+--------------------------+----------+
+|1     |RegFileIP_blk_mem_gen_0_0 |         1|
+|2     |RegFileIP_blk_mem_gen_0_1 |         1|
+|3     |memory_ip_blk_mem_gen_0_1 |         1|
+|4     |memory_ip_MemBlock0_0     |         1|
+|5     |memory_ip_MemBlock0_1     |         1|
+|6     |memory_ip_MemBlock0_2     |         1|
++------+--------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |RegFileIP_blk_mem_gen_0 |     2|
+|3     |memory_ip_MemBlock0     |     3|
+|6     |memory_ip_blk_mem_gen_0 |     1|
+|7     |BUFG                    |     1|
+|8     |CARRY4                  |    49|
+|9     |LUT1                    |     3|
+|10    |LUT2                    |    82|
+|11    |LUT3                    |    44|
+|12    |LUT4                    |   109|
+|13    |LUT5                    |   161|
+|14    |LUT6                    |   158|
+|15    |MUXF7                   |     1|
+|16    |FDRE                    |    72|
+|17    |FDSE                    |     1|
+|18    |LD                      |     4|
+|19    |IBUF                    |     2|
+|20    |OBUF                    |     8|
++------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7902 ; free virtual = 14654
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 207 critical warnings and 609 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2309.062 ; gain = 499.527 ; free physical = 7902 ; free virtual = 14654
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2309.062 ; gain = 657.312 ; free physical = 7902 ; free virtual = 14654
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2309.062 ; gain = 0.000 ; free physical = 8185 ; free virtual = 14938
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2309.062 ; gain = 0.000 ; free physical = 8187 ; free virtual = 14940
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+Synth Design complete | Checksum: 20c2aac
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 328 Warnings, 169 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 2309.062 ; gain = 982.586 ; free physical = 8187 ; free virtual = 14940
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1794.313; main = 1465.680; forked = 355.040
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3267.230; main = 2309.031; forked = 990.215
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2333.039 ; gain = 0.000 ; free physical = 8187 ; free virtual = 14940
+INFO: [Common 17-1381] The checkpoint '/home/tiago/Documents/Vespa/project_micro/project_micro.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  9 17:01:53 2024...

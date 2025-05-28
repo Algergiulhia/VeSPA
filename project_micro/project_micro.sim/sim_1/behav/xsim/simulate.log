@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module topTB.toptb.cpuInst.dp.RF.regInst.regBlock0.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module topTB.toptb.cpuInst.dp.RF.regInst.regBlock1.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module topTB.toptb.mem.memIP.MemBlock0.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module topTB.toptb.mem.memIP.MemBlock1.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module topTB.toptb.mem.memIP.MemBlock2.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module topTB.toptb.mem.memIP.MemBlock3.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_7 collision detected at time: 110000, Instance: topTB.toptb.cpuInst.dp.RF.regInst.regBlock0.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst , A ra`d address: 0, B write address: 0
+blk_mem_gen_v8_4_7 collision detected at time: 110000, Instance: topTB.toptb.cpuInst.dp.RF.regInst.regBlock1.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst , A ra`d address: 0, B write address: 0
+blk_mem_gen_v8_4_7 collision detected at time: 1050000, Instance: topTB.toptb.cpuInst.dp.RF.regInst.regBlock0.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst , A ra`d address: 2, B write address: 2

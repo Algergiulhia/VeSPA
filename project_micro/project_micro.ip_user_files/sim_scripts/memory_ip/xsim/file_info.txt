@@ -1,0 +1,6 @@
+memory_ip_blk_mem_gen_0_1.v,verilog,xil_defaultlib,../../../bd/memory_ip/ip/memory_ip_blk_mem_gen_0_1/sim/memory_ip_blk_mem_gen_0_1.v,
+memory_ip_MemBlock0_0.v,verilog,xil_defaultlib,../../../bd/memory_ip/ip/memory_ip_MemBlock0_0/sim/memory_ip_MemBlock0_0.v,
+memory_ip_MemBlock0_1.v,verilog,xil_defaultlib,../../../bd/memory_ip/ip/memory_ip_MemBlock0_1/sim/memory_ip_MemBlock0_1.v,
+memory_ip_MemBlock0_2.v,verilog,xil_defaultlib,../../../bd/memory_ip/ip/memory_ip_MemBlock0_2/sim/memory_ip_MemBlock0_2.v,
+memory_ip.v,verilog,xil_defaultlib,../../../bd/memory_ip/sim/memory_ip.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

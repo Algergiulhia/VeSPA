@@ -1,0 +1,26 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/RegFileIP/ip/RegFileIP_blk_mem_gen_0_0/sim/RegFileIP_blk_mem_gen_0_0.v,1700933119,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/RegFileIP/ip/RegFileIP_blk_mem_gen_0_1/sim/RegFileIP_blk_mem_gen_0_1.v,,RegFileIP_blk_mem_gen_0_0,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/RegFileIP/ip/RegFileIP_blk_mem_gen_0_1/sim/RegFileIP_blk_mem_gen_0_1.v,1700933119,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/RegFileIP/sim/RegFileIP.v,,RegFileIP_blk_mem_gen_0_1,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/RegFileIP/sim/RegFileIP.v,1700933119,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v,,RegFileIP,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/memory_ip/ip/memory_ip_MemBlock0_0/sim/memory_ip_MemBlock0_0.v,1704735603,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/memory_ip/ip/memory_ip_MemBlock0_1/sim/memory_ip_MemBlock0_1.v,,memory_ip_MemBlock0_0,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/memory_ip/ip/memory_ip_MemBlock0_1/sim/memory_ip_MemBlock0_1.v,1704761016,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/memory_ip/ip/memory_ip_MemBlock0_2/sim/memory_ip_MemBlock0_2.v,,memory_ip_MemBlock0_1,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/memory_ip/ip/memory_ip_MemBlock0_2/sim/memory_ip_MemBlock0_2.v,1704762396,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/memory_ip/sim/memory_ip.v,,memory_ip_MemBlock0_2,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/memory_ip/ip/memory_ip_blk_mem_gen_0_1/sim/memory_ip_blk_mem_gen_0_1.v,1704735603,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/memory_ip/ip/memory_ip_MemBlock0_0/sim/memory_ip_MemBlock0_0.v,,memory_ip_blk_mem_gen_0_1,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/memory_ip/sim/memory_ip.v,1704762395,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.ip_user_files/bd/RegFileIP/ip/RegFileIP_blk_mem_gen_0_0/sim/RegFileIP_blk_mem_gen_0_0.v,,memory_ip,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sim_1/new/dmaTB.v,1705201963,verilog,,,,dmaTB,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sim_1/new/topTB.v,1704838479,verilog,,,,topTB,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/RegFileHandler.v,1705114919,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/alu.v,,RegFileHandler,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/alu.v,1705115709,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/bus.v,,alu,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/bus.v,1705190718,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/checkCond.v,,addressBus;dataBus;memoryMap,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/checkCond.v,1699880935,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/controlunit.v,,checkCondition,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/controlunit.v,1705114818,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/cpu.v,,controlunit,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/cpu.v,1705191308,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/datapathBh.v,,cpu,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/datapathBh.v,1705115708,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/dmaController.v,,datapath,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/dmaController.v,1705201603,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/interruptController.v,,dmaController,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/interruptController.v,1704836809,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/memoryWrapper.v,,interruptController,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/memoryWrapper.v,1704841137,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/top.v,,memoryWrapper,,,,,,,,
+/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sources_1/new/top.v,1704825861,verilog,,/home/tiago/Documents/Vespa/project_micro/project_micro.srcs/sim_1/new/topTB.v,,clockModule;top,,,,,,,,

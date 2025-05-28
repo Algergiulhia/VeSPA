@@ -1,0 +1,429 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8D11123E362A82A",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../project_micro.gen/sources_1/bd/RegFileIP",
+      "name": "RegFileIP",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "regBlock0": "",
+      "regBlock1": ""
+    },
+    "interface_ports": {
+      "port1": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      },
+      "PortWrite0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "DOUT": {
+            "physical_name": "PortWrite0_dout",
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "port2": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      },
+      "PortWrite1": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:bram:1.0",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "DOUT": {
+            "physical_name": "PortWrite1_dout",
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "RegFileIP_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "address1": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "addressWrite": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "address2": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "dataIn1": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dataWrite": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dataIn2": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dataOut1": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dataOut2": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "RegWriteEn": {
+        "direction": "I"
+      },
+      "RegEn2": {
+        "direction": "I"
+      },
+      "RegEn1": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "regBlock0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
+        "xci_name": "RegFileIP_blk_mem_gen_0_0",
+        "xci_path": "ip/RegFileIP_blk_mem_gen_0_0/RegFileIP_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "regBlock0",
+        "parameters": {
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Enable_B": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "32"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "regBlock1": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
+        "xci_name": "RegFileIP_blk_mem_gen_0_1",
+        "xci_path": "ip/RegFileIP_blk_mem_gen_0_1/RegFileIP_blk_mem_gen_0_1.xci",
+        "inst_hier_path": "regBlock1",
+        "parameters": {
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Enable_B": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "True_Dual_Port_RAM"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "32"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "BRAM_PORTA_0_1": {
+        "interface_ports": [
+          "port1",
+          "regBlock0/BRAM_PORTA"
+        ]
+      },
+      "BRAM_PORTA_1_1": {
+        "interface_ports": [
+          "port2",
+          "regBlock1/BRAM_PORTA"
+        ]
+      },
+      "BRAM_PORTB_0_1": {
+        "interface_ports": [
+          "PortWrite0",
+          "regBlock0/BRAM_PORTB"
+        ]
+      },
+      "BRAM_PORTB_0_2": {
+        "interface_ports": [
+          "PortWrite1",
+          "regBlock1/BRAM_PORTB"
+        ]
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "clk",
+          "regBlock0/clka",
+          "regBlock1/clka",
+          "regBlock0/clkb",
+          "regBlock1/clkb"
+        ]
+      },
+      "RegEn0_1": {
+        "ports": [
+          "RegEn1",
+          "regBlock0/wea"
+        ]
+      },
+      "RegEn1_1": {
+        "ports": [
+          "RegWriteEn",
+          "regBlock0/web",
+          "regBlock1/web"
+        ]
+      },
+      "RegEn2_1": {
+        "ports": [
+          "RegEn2",
+          "regBlock1/wea"
+        ]
+      },
+      "address0_1": {
+        "ports": [
+          "address1",
+          "regBlock0/addra"
+        ]
+      },
+      "address1_1": {
+        "ports": [
+          "addressWrite",
+          "regBlock0/addrb",
+          "regBlock1/addrb"
+        ]
+      },
+      "address2_1": {
+        "ports": [
+          "address2",
+          "regBlock1/addra"
+        ]
+      },
+      "dataIn0_1": {
+        "ports": [
+          "dataIn1",
+          "regBlock0/dina"
+        ]
+      },
+      "dataIn1_1": {
+        "ports": [
+          "dataWrite",
+          "regBlock0/dinb",
+          "regBlock1/dinb"
+        ]
+      },
+      "dataIn2_1": {
+        "ports": [
+          "dataIn2",
+          "regBlock1/dina"
+        ]
+      },
+      "regBlock0_douta": {
+        "ports": [
+          "regBlock0/douta",
+          "dataOut1"
+        ]
+      },
+      "regBlock1_douta": {
+        "ports": [
+          "regBlock1/douta",
+          "dataOut2"
+        ]
+      }
+    }
+  }
+}

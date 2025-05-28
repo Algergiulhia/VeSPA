@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="topTB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="topTB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,531.001 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="211"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wvobject type="logic" fp_name="/topTB/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/cpuInst/cu/IRLoad">
+      <obj_property name="ElementShortName">IRLoad</obj_property>
+      <obj_property name="ObjectShortName">IRLoad</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/cpuInst/cu/PCLoad">
+      <obj_property name="ElementShortName">PCLoad</obj_property>
+      <obj_property name="ObjectShortName">PCLoad</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/cpuInst/cu/RFLoad">
+      <obj_property name="ElementShortName">RFLoad</obj_property>
+      <obj_property name="ObjectShortName">RFLoad</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/cpuInst/cu/ALUEn">
+      <obj_property name="ElementShortName">ALUEn</obj_property>
+      <obj_property name="ObjectShortName">ALUEn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/dp/PC">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/dp/IR">
+      <obj_property name="ElementShortName">IR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/cu/muxPC">
+      <obj_property name="ElementShortName">muxPC[1:0]</obj_property>
+      <obj_property name="ObjectShortName">muxPC[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/cu/muxMem">
+      <obj_property name="ElementShortName">muxMem[1:0]</obj_property>
+      <obj_property name="ObjectShortName">muxMem[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/cu/muxRF">
+      <obj_property name="ElementShortName">muxRF[1:0]</obj_property>
+      <obj_property name="ObjectShortName">muxRF[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/dp/result">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/stateSyn">
+      <obj_property name="ElementShortName">stateSyn[2:0]</obj_property>
+      <obj_property name="ObjectShortName">stateSyn[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/dp/rst">
+      <obj_property name="ElementShortName">rst[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rst[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/dp/rs1">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/dp/rs2">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/dp/CPUAddr">
+      <obj_property name="ElementShortName">CPUAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CPUAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/dp/cpuData">
+      <obj_property name="ElementShortName">cpuData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cpuData[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/cpuInst/dp/RF/regInst/regBlock0/inst/\native_mem_module.blk_mem_gen_v8_4_7_inst /memory">
+      <obj_property name="ElementShortName">memory[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/cpuInst/cu/WriteCPU">
+      <obj_property name="ElementShortName">WriteCPU</obj_property>
+      <obj_property name="ObjectShortName">WriteCPU</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/addrbus/WriteDMA">
+      <obj_property name="ElementShortName">WriteDMA</obj_property>
+      <obj_property name="ObjectShortName">WriteDMA</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/mem/WriteMem">
+      <obj_property name="ElementShortName">WriteMem</obj_property>
+      <obj_property name="ObjectShortName">WriteMem</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/cpuInst/cu/ReadDMA">
+      <obj_property name="ElementShortName">ReadDMA</obj_property>
+      <obj_property name="ObjectShortName">ReadDMA</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/cpuInst/cu/DMAisRead">
+      <obj_property name="ElementShortName">DMAisRead</obj_property>
+      <obj_property name="ObjectShortName">DMAisRead</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/mem/dataIn_32">
+      <obj_property name="ElementShortName">dataIn_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/mem/dataOut_32">
+      <obj_property name="ElementShortName">dataOut_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/mem/address_32">
+      <obj_property name="ElementShortName">address_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">address_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/flagDMA">
+      <obj_property name="ElementShortName">flagDMA</obj_property>
+      <obj_property name="ObjectShortName">flagDMA</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/dmaCtrl">
+      <obj_property name="ElementShortName">dmaCtrl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dmaCtrl[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/dmaWriteAddr">
+      <obj_property name="ElementShortName">dmaWriteAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmaWriteAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/dma/dmaReadAddr">
+      <obj_property name="ElementShortName">dmaReadAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmaReadAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/dma/dmaReadData">
+      <obj_property name="ElementShortName">dmaReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmaReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/dma/dmaData">
+      <obj_property name="ElementShortName">dmaData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmaData[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/dma/state">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/dma/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/cpuInst/cu/dmaSwitch">
+      <obj_property name="ElementShortName">dmaSwitch</obj_property>
+      <obj_property name="ObjectShortName">dmaSwitch</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/mem/WriteMemCond">
+      <obj_property name="ElementShortName">WriteMemCond</obj_property>
+      <obj_property name="ObjectShortName">WriteMemCond</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/topTB/toptb/mem/memInt">
+      <obj_property name="ElementShortName">memInt</obj_property>
+      <obj_property name="ObjectShortName">memInt</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/mem/memIP/MemBlock3/inst/\native_mem_module.blk_mem_gen_v8_4_7_inst /memory">
+      <obj_property name="ElementShortName">memory[0:8191][7:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[0:8191][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/mem/memIP/MemBlock2/inst/\native_mem_module.blk_mem_gen_v8_4_7_inst /memory">
+      <obj_property name="ElementShortName">memory[0:8191][7:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[0:8191][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/mem/memIP/MemBlock1/inst/\native_mem_module.blk_mem_gen_v8_4_7_inst /memory">
+      <obj_property name="ElementShortName">memory[0:8191][7:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[0:8191][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/topTB/toptb/mem/memIP/MemBlock0/inst/\native_mem_module.blk_mem_gen_v8_4_7_inst /memory">
+      <obj_property name="ElementShortName">memory[0:8191][7:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[0:8191][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

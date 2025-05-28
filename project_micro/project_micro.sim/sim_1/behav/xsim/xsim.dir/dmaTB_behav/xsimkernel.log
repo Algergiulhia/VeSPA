@@ -1,0 +1,7 @@
+Running: xsim.dir/dmaTB_behav/xsimk -simmode gui -wdb dmaTB_behav.wdb -simrunnum 0 -socket 50661
+Design successfully loaded
+Design Loading Memory Usage: 23412 KB (Peak: 23984 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 105408 KB (Peak: 162680 KB)
+Simulation CPU Usage: 30 ms

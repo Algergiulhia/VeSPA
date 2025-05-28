@@ -1,0 +1,24 @@
+#
+# An unexpected error has occurred (6)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x3c460) [0x7fe19323c460]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11b) [0x7fe19329152b]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x16) [0x7fe19323c3b6]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xd7) [0x7fe19322287c]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0x8ba13) [0x7fe193a8ba13]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0x91b86) [0x7fe193a91b86]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0x91bc1) [0x7fe193a91bc1]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0x928ff) [0x7fe193a928ff]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(+0x359cce) [0x7fe164559cce]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(SG_Model::WaveformRender::render(SG_Model::WVDataObject const&)+0x84) [0x7fe164564b34]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVWaveformPanel::WaveformTraverser::drawWaveform(SG_Model::WVDataObject const*, int, int)+0x38e) [0x7fe1645dfc7e]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVWaveformPanel::WaveformTraverser::handleItemSize(WaveViewer::WVTreeWVObjectModel::ITraverseHandler::TraverseItem const&)+0x52) [0x7fe1645dff52]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVTreeWVObjectModel::traverseYRange(SG_Model::WVDataObject const*, WaveViewer::WVTreeWVObjectModel::ITraverseHandler&, int, int, int&, int&) const+0x234) [0x7fe1645c3474]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVTreeWVObjectModel::traverseYRange(SG_Model::WVDataObject const*, WaveViewer::WVTreeWVObjectModel::ITraverseHandler&, int, int, int&, int&) const+0x2be) [0x7fe1645c34fe]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVTreeWVObjectModel::traverseYRange(WaveViewer::WVTreeWVObjectModel::ITraverseHandler&, int, int) const+0x57) [0x7fe1645c3637]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVWaveformPanel::getGraphics(HDGDStringStream&, long&)+0x3a9) [0x7fe1645df279]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(WVExecutiveImp::getGraphicsDataSize()+0x9a) [0x7fe16459b13a]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(WVExecutive::getGraphicsDataSize()+0xf) [0x7fe16459b5bf]
+/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/librdi_wavedata.so(Java_ui_views_waveform_waveformi_WVExecutive_1getGraphicsDataSize+0x17) [0x7fe1645e7b97]
+[0x7fe14624ffdc]

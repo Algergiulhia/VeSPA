@@ -1,0 +1,94 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.79452",
+   "Default View_TopLeft":"-435,-385",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeData":"true",
+   "Display-PortTypeOthers":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Interfaces View_Layers":"/dataIn2_1:false|/dataIn3_1:false|/clk_1:false|/dataIn0_1:false|/dataIn1_1:false|",
+   "Interfaces View_ScaleFactor":"0.933036",
+   "Interfaces View_TopLeft":"-746,-657",
+   "PinnedBlocks":"/MemBlock3|/MemBlock0|/MemBlock1|/MemBlock2|",
+   "PinnedPorts":"dataOut2|dataOut1|dataOut0|dataOut3|",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layers":"/dataIn2_1:true|/dataIn3_1:true|/clk_1:true|/dataIn0_1:true|/dataIn1_1:true|",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_WriteEn -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace portBus dataOut0 -pg 1 -lvl 3 -x 1100 -y 220 -defaultsOSRD
+preplace portBus dataOut1 -pg 1 -lvl 3 -x 1100 -y 440 -defaultsOSRD
+preplace portBus dataOut2 -pg 1 -lvl 3 -x 1100 -y 660 -defaultsOSRD
+preplace portBus dataOut3 -pg 1 -lvl 3 -x 1100 -y 880 -defaultsOSRD
+preplace portBus dataIn0 -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace portBus dataIn1 -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace portBus dataIn2 -pg 1 -lvl 0 -x 0 -y 560 -defaultsOSRD
+preplace portBus dataIn3 -pg 1 -lvl 0 -x 0 -y 780 -defaultsOSRD
+preplace portBus address1 -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace portBus address2 -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace portBus address3 -pg 1 -lvl 0 -x 0 -y 740 -defaultsOSRD
+preplace portBus address0 -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace inst MemBlock0 -pg 1 -lvl 1 -x 170 -y 40 -defaultsOSRD -pinY BRAM_PORTA 20L -pinY BRAM_PORTA.addra 40L -pinY BRAM_PORTA.clka 60L -pinY BRAM_PORTA.dina 80L -pinY BRAM_PORTA.douta 100L -pinY BRAM_PORTA.wea 120L
+preplace inst MemBlock1 -pg 1 -lvl 1 -x 170 -y 260 -defaultsOSRD -pinY BRAM_PORTA 20L -pinY BRAM_PORTA.addra 40L -pinY BRAM_PORTA.clka 60L -pinY BRAM_PORTA.dina 80L -pinY BRAM_PORTA.douta 100L -pinY BRAM_PORTA.wea 120L
+preplace inst MemBlock2 -pg 1 -lvl 1 -x 170 -y 480 -defaultsOSRD -pinY BRAM_PORTA 20L -pinY BRAM_PORTA.addra 40L -pinY BRAM_PORTA.clka 60L -pinY BRAM_PORTA.dina 80L -pinY BRAM_PORTA.douta 100L -pinY BRAM_PORTA.wea 120L
+preplace inst MemBlock3 -pg 1 -lvl 1 -x 170 -y 700 -defaultsOSRD -pinY BRAM_PORTA 20L -pinY BRAM_PORTA.addra 40L -pinY BRAM_PORTA.clka 60L -pinY BRAM_PORTA.dina 80L -pinY BRAM_PORTA.douta 100L -pinY BRAM_PORTA.wea 120L
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -x 420 -y 280 -defaultsOSRD -pinY BRAM_PORTA 20L -pinY rsta_busy 20R
+preplace netloc MemBlock0_douta 1 0 3 60 220 NJ 220 N
+preplace netloc MemBlock1_douta 1 0 3 60 440 NJ 440 N
+preplace netloc MemBlock2_douta 1 0 3 60 660 NJ 660 N
+preplace netloc MemBlock3_douta 1 0 3 60 880 NJ 880 N
+preplace netloc WriteEn_1 1 0 1 40 160n
+preplace netloc address0_1 1 0 1 N 80
+preplace netloc address1_1 1 0 1 NJ 300
+preplace netloc address2_1 1 0 1 NJ 520
+preplace netloc address3_1 1 0 1 NJ 740
+preplace netloc clk_1 1 0 1 20 100n
+preplace netloc dataIn0_1 1 0 1 NJ 120
+preplace netloc dataIn1_1 1 0 1 NJ 340
+preplace netloc dataIn2_1 1 0 1 NJ 560
+preplace netloc dataIn3_1 1 0 1 NJ 780
+levelinfo -pg 1 0 170 420 1100
+pagesize -pg 1 -db -bbox -sgen -270 -20 1250 900
+",
+   "Reduced Jogs_ScaleFactor":"0.738544",
+   "Reduced Jogs_TopLeft":"-612,3",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y -230 -defaultsOSRD
+preplace port port-id_WriteEn -pg 1 -lvl 0 -x 0 -y -250 -defaultsOSRD
+preplace portBus dataOut0 -pg 1 -lvl 3 -x 550 -y -400 -defaultsOSRD
+preplace portBus dataOut1 -pg 1 -lvl 3 -x 550 -y -170 -defaultsOSRD
+preplace portBus dataOut2 -pg 1 -lvl 3 -x 550 -y 50 -defaultsOSRD
+preplace portBus dataOut3 -pg 1 -lvl 3 -x 550 -y 270 -defaultsOSRD
+preplace portBus dataIn0 -pg 1 -lvl 0 -x 0 -y -500 -defaultsOSRD
+preplace portBus dataIn1 -pg 1 -lvl 0 -x 0 -y -270 -defaultsOSRD
+preplace portBus dataIn2 -pg 1 -lvl 0 -x 0 -y -50 -defaultsOSRD
+preplace portBus dataIn3 -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace portBus address1 -pg 1 -lvl 0 -x 0 -y -310 -defaultsOSRD
+preplace portBus address2 -pg 1 -lvl 0 -x 0 -y -90 -defaultsOSRD
+preplace portBus address3 -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace portBus address0 -pg 1 -lvl 0 -x 0 -y -540 -defaultsOSRD
+preplace inst MemBlock0 -pg 1 -lvl 1 -x 160 -y -510 -defaultsOSRD
+preplace inst MemBlock1 -pg 1 -lvl 1 -x 160 -y -280 -defaultsOSRD
+preplace inst MemBlock2 -pg 1 -lvl 1 -x 160 -y -60 -defaultsOSRD
+preplace inst MemBlock3 -pg 1 -lvl 1 -x 160 -y 160 -defaultsOSRD
+preplace netloc MemBlock0_douta 1 0 3 50 -400 N -400 N
+preplace netloc MemBlock1_douta 1 0 3 50 -170 N -170 N
+preplace netloc MemBlock2_douta 1 0 3 50 50 N 50 N
+preplace netloc MemBlock3_douta 1 0 3 50 270 N 270 N
+preplace netloc WriteEn_1 1 0 1 40 -460n
+preplace netloc address0_1 1 0 1 N -540
+preplace netloc address1_1 1 0 1 N -310
+preplace netloc address2_1 1 0 1 N -90
+preplace netloc address3_1 1 0 1 N 130
+preplace netloc clk_1 1 0 1 30 -520n
+preplace netloc dataIn0_1 1 0 1 N -500
+preplace netloc dataIn1_1 1 0 1 N -270
+preplace netloc dataIn2_1 1 0 1 N -50
+preplace netloc dataIn3_1 1 0 1 N 170
+levelinfo -pg 1 0 160 400 550
+pagesize -pg 1 -db -bbox -sgen -610 -980 700 590
+"
+}
+0

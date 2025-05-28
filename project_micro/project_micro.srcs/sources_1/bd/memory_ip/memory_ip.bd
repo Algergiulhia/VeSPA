@@ -1,0 +1,376 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9C51B543E0C65C5E",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../project_micro.gen/sources_1/bd/memory_ip",
+      "name": "memory_ip",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "MemBlock0": "",
+      "MemBlock1": "",
+      "MemBlock2": "",
+      "MemBlock3": ""
+    },
+    "ports": {
+      "dataOut0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "dataOut1": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "dataOut2": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "dataOut3": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "dataIn0": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dataIn1": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dataIn2": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dataIn3": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "memory_ip_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "address1": {
+        "direction": "I",
+        "left": "12",
+        "right": "0"
+      },
+      "address2": {
+        "direction": "I",
+        "left": "12",
+        "right": "0"
+      },
+      "address3": {
+        "direction": "I",
+        "left": "12",
+        "right": "0"
+      },
+      "WriteEn": {
+        "direction": "I"
+      },
+      "address0": {
+        "direction": "I",
+        "left": "12",
+        "right": "0"
+      }
+    },
+    "components": {
+      "MemBlock0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
+        "xci_name": "memory_ip_blk_mem_gen_0_1",
+        "xci_path": "ip/memory_ip_blk_mem_gen_0_1/memory_ip_blk_mem_gen_0_1.xci",
+        "inst_hier_path": "MemBlock0",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../mem0.coe"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_RAM"
+          },
+          "Operating_Mode_A": {
+            "value": "WRITE_FIRST"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Write_Width_A": {
+            "value": "8"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "MemBlock1": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
+        "xci_name": "memory_ip_MemBlock0_0",
+        "xci_path": "ip/memory_ip_MemBlock0_0/memory_ip_MemBlock0_0.xci",
+        "inst_hier_path": "MemBlock1",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../mem1.coe"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_RAM"
+          },
+          "Operating_Mode_A": {
+            "value": "WRITE_FIRST"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Write_Width_A": {
+            "value": "8"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "MemBlock2": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
+        "xci_name": "memory_ip_MemBlock0_1",
+        "xci_path": "ip/memory_ip_MemBlock0_1/memory_ip_MemBlock0_1.xci",
+        "inst_hier_path": "MemBlock2",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../mem2.coe"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_RAM"
+          },
+          "Operating_Mode_A": {
+            "value": "WRITE_FIRST"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Write_Width_A": {
+            "value": "8"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "MemBlock3": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
+        "xci_name": "memory_ip_MemBlock0_2",
+        "xci_path": "ip/memory_ip_MemBlock0_2/memory_ip_MemBlock0_2.xci",
+        "inst_hier_path": "MemBlock3",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../mem3.coe"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_RAM"
+          },
+          "Operating_Mode_A": {
+            "value": "WRITE_FIRST"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Write_Width_A": {
+            "value": "8"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      }
+    },
+    "nets": {
+      "MemBlock0_douta": {
+        "ports": [
+          "MemBlock0/douta",
+          "dataOut0"
+        ]
+      },
+      "MemBlock1_douta": {
+        "ports": [
+          "MemBlock1/douta",
+          "dataOut1"
+        ]
+      },
+      "MemBlock2_douta": {
+        "ports": [
+          "MemBlock2/douta",
+          "dataOut2"
+        ]
+      },
+      "MemBlock3_douta": {
+        "ports": [
+          "MemBlock3/douta",
+          "dataOut3"
+        ]
+      },
+      "WriteEn_1": {
+        "ports": [
+          "WriteEn",
+          "MemBlock0/wea",
+          "MemBlock1/wea",
+          "MemBlock2/wea",
+          "MemBlock3/wea"
+        ]
+      },
+      "address0_1": {
+        "ports": [
+          "address0",
+          "MemBlock0/addra"
+        ]
+      },
+      "address1_1": {
+        "ports": [
+          "address1",
+          "MemBlock1/addra"
+        ]
+      },
+      "address2_1": {
+        "ports": [
+          "address2",
+          "MemBlock2/addra"
+        ]
+      },
+      "address3_1": {
+        "ports": [
+          "address3",
+          "MemBlock3/addra"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "MemBlock0/clka",
+          "MemBlock1/clka",
+          "MemBlock2/clka",
+          "MemBlock3/clka"
+        ]
+      },
+      "dataIn0_1": {
+        "ports": [
+          "dataIn0",
+          "MemBlock0/dina"
+        ]
+      },
+      "dataIn1_1": {
+        "ports": [
+          "dataIn1",
+          "MemBlock1/dina"
+        ]
+      },
+      "dataIn2_1": {
+        "ports": [
+          "dataIn2",
+          "MemBlock2/dina"
+        ]
+      },
+      "dataIn3_1": {
+        "ports": [
+          "dataIn3",
+          "MemBlock3/dina"
+        ]
+      }
+    }
+  }
+}

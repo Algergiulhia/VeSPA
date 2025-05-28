@@ -1,0 +1,9 @@
+verilog xil_defaultlib  \
+"../../../bd/RegFileIP/ip/RegFileIP_blk_mem_gen_0_0/sim/RegFileIP_blk_mem_gen_0_0.v" \
+"../../../bd/RegFileIP/ip/RegFileIP_blk_mem_gen_0_1/sim/RegFileIP_blk_mem_gen_0_1.v" \
+"../../../bd/RegFileIP/sim/RegFileIP.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
